@@ -148,7 +148,7 @@ screen browser():
             hotspot(591, 541, 18, 18) action SetVariable("gender", "N/A")
 
             if username !="":
-                hotspot(570, 646, 100, 50) clicked [SetScreenVariable("current_input", ""), If(username=="lunalucid", [SetScreenVariable("confirmation", "That username is already taken!"), Function(suggest_username)], SetScreenVariable("confirmation", "Registration submitted!"))]
+                hotspot(570, 646, 100, 50) action [SetScreenVariable("current_input", ""), If(username=="lunalucid", [SetScreenVariable("confirmation", "That username is already taken!"), Function(suggest_username)], SetScreenVariable("confirmation", "Registration submitted!"))]
 
             if current_input == "username_input":
                 input default username changed change_username exclude " " length 15 pos(450, 418) xsize 1280 style "retro_text"
