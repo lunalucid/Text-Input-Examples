@@ -14,8 +14,7 @@ All assets included in this folder were created by LunaLucid (or Namastaii from 
 * Define a function that stores that input.
 
 ```python
-init:
-    default myinput_1 = ""
+default myinput_1 = ""
 
 init python:
     def change_myinput1(newstring):                                          

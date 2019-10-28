@@ -6,9 +6,10 @@
 #allow - string list of characters that user is allowed to input
 #exclude - string list of characters that user is not allowed to input
 ################################################################################
-init:
-    default myinput_1 = ""
-    default myinput_2 = ""
+
+default myinput_1 = ""
+default myinput_2 = ""
+
 init python:
     def change_myinput1(newstring):                                             #Functions that allow us to store the input
         store.myinput_1 = newstring
